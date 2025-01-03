@@ -2,7 +2,8 @@
 <html>
 <head>
   <title>Example Class Map Gallery</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+</head>
+<body>
 <!-- Container element of Mirador whose id should be passed to the instantiating call as "id" -->
 <div id="my-mirador"/> 
 
@@ -11,14 +12,7 @@ var mirador = Mirador.viewer({
   "id": "my-mirador",
   "manifests": {
    "https://www.davidrumsey.com/luna/servlet/iiif/m/RUMSEY~8~1~304900~90075377/manifest", // Replace with the actual manifest URL
-        "https://www.davidrumsey.com/luna/servlet/iiif/m/RUMSEY~8~1~240~20049/manifest", //Add as many manifest URLs as you need
-        "https://www.davidrumsey.com/luna/servlet/iiif/m/RUMSEY~8~1~280~30140/manifest",
-        "https://www.davidrumsey.com/luna/servlet/iiif/m/RUMSEY~8~1~222~20037/manifest",
-        "https://www.loc.gov/item/74693173/manifest.json",
-        "https://www.loc.gov/item/74693175/manifest.json",
-        "https://www.loc.gov/item/74693178/manifest.json",
-       "https://purl.stanford.edu/tw367mz1194/iiif/manifest": {
-      "provider": "Harvard University"
+       
     }
   },
   "windows": [
@@ -30,5 +24,5 @@ var mirador = Mirador.viewer({
   ]
 });
 </script>
-
+</body>
 </html>
