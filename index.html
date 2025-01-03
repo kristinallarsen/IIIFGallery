@@ -1,15 +1,25 @@
-<!doctype html>
-
- <html lang="en">
- <head>
-   <meta charset="utf-8">
-
-   <title>Add title here</title>
-   <meta name="description" content="add description here">
-   <meta name="author" content="add author name here">
- </head>
-
- <body>
-   <p>Hello World</p>
- </body>
- </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example Class Map Gallery</title>
+  <script src="https://projectmirador.github.io/mirador/dist/mirador.min.js"></script>
+  <link rel="stylesheet" href="https://projectmirador.github.io/mirador/dist/mirador.css"> </head>
+<body>
+  <div id="mirador"></div>
+  <script>
+    Mirador({
+      id: 'mirador',
+      manifests: [
+        "https://www.davidrumsey.com/luna/servlet/iiif/m/RUMSEY~8~1~304900~90075377/manifest", // Replace with the actual manifest URL
+        "https://www.davidrumsey.com/luna/servlet/iiif/m/RUMSEY~8~1~240~20049/manifest", //Add as many manifest URLs as you need
+        "https://www.davidrumsey.com/luna/servlet/iiif/m/RUMSEY~8~1~280~30140/manifest",
+        "https://www.davidrumsey.com/luna/servlet/iiif/m/RUMSEY~8~1~222~20037/manifest",
+        "https://www.loc.gov/item/74693173/manifest.json",
+        "https://www.loc.gov/item/74693175/manifest.json",
+        "https://www.loc.gov/item/74693178/manifest.json",
+       "https://purl.stanford.edu/tw367mz1194/iiif/manifest"
+      ]
+    });
+  </script>
+</body>
+</html>
